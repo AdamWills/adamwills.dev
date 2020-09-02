@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "dev": "parcel index.html",
-    "build": "rm -rf dist && parcel build *.html --no-source-maps --no-cache"
+    "build": "rm -rf dist && parcel build *.html --no-source-maps --no-cache --no-minify"
   },
   "author": "Adam Wills <adam@adamwills.com>",
   "license": "ISC",

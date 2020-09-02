@@ -1,0 +1,96 @@
+@tailwind base;
+
+h1 {
+  @apply font-bold text-center;
+  font-size: 6rem;
+  line-height: 5rem;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 4px 4px 0 theme('colors.hotpink'), -6px -6px 0 theme('colors.hotblue'), 4px -4px theme('colors.hotyellow');
+}
+
+h2 {
+  @apply text-5xl font-bold;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 3px 3px 0 theme('colors.hotpink'), -2px -2px 0 theme('colors.hotblue'), 4px -3px theme('colors.hotyellow');
+}
+
+h3 {
+  @apply text-3xl font-bold mt-2;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h3:nth-of-type(3n+1) {
+  @apply text-hotpink;
+}
+h3:nth-of-type(3n+2) {
+  @apply text-hotblue;
+}
+h3:nth-of-type(3n+3) {
+  @apply text-hotyellow;
+}
+
+h4 {
+  @apply text-xl font-bold mb-4;
+}
+
+ul {
+  @apply mb-4;
+}
+
+li {
+  @apply list-disc list-outside ml-8;
+}
+
+a {
+  @apply underline text-hotyellow transition-all ease-in-out duration-300;
+
+}
+a:hover {
+  @apply text-hotpink;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+
+.post-title {
+  @apply font-bold mb-4 text-center -mt-2;
+  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px 0 theme('colors.hotpink'), -3px -3px 0 theme('colors.hotblue'), 4px -4px theme('colors.hotyellow');
+}
+
+.tag-list li {
+  @apply list-none inline-block bg-white text-black ml-0 px-4 py-2 mb-2;
+  transition: all .1s ease-in-out;
+}
+
+.tag-list li:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+.tag-list li:nth-child(3n+1):hover {
+  @apply bg-hotpink text-white;
+}
+.tag-list li:nth-child(3n+2):hover {
+  @apply bg-hotyellow text-black;
+}
+.tag-list li:nth-child(3n+3):hover {
+  @apply bg-hotblue text-white;
+}
+
+.scribble {
+  @apply mx-auto fill-current w-32 my-8;
+}
+
+.scribble:nth-of-type(3n+1) {
+  @apply text-hotpink;
+}
+.scribble:nth-of-type(3n+2) {
+  @apply text-hotyellow;
+}
+.scribble:nth-of-type(3n+3) {
+  @apply text-hotblue;
+}
+

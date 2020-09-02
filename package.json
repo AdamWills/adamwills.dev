@@ -1,0 +1,20 @@
+{
+  "name": "adamwills.dev",
+  "version": "1.0.0",
+  "description": "Personal website for Adam Wills",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "parcel index.html",
+    "build": "rm -rf dist && parcel build *.html --no-source-maps --no-cache"
+  },
+  "author": "Adam Wills <adam@adamwills.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "tailwindcss": "^1.7.6"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

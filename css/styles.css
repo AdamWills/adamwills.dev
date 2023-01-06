@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+    @apply min-h-screen flex flex-col justify-center;
+}
+
+.section-dark {
+    @apply bg-brand-black text-white;
+}
+
+.section-dark h2, .section-dark h3 {
+    @apply text-white;
+}
+
+article h3 {
+    @apply mt-0 !important
+}
